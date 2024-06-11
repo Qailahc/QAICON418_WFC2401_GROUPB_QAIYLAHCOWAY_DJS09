@@ -1,18 +1,19 @@
-// Code Tidy
-
+// Imports
 import { showReviewTotal, populateUser, showDetails, getTopTwoReviews} from './utils'
 import { Permissions , LoyaltyUser } from './enums'
 import { Review, Property } from './interfaces'
 import MainProperty from './classes' 
+// DOM Element Selections - These lines select various HTML elements and assign them to constants for later manipulation
 const propertyContainer = document.querySelector('.properties')
 const reviewContainer = document.querySelector('.reviews')
 const container = document.querySelector('.container')
 const button = document.querySelector('button')
 const footer = document.querySelector('.footer')
 
+// Global Variable
 let isLoggedIn: boolean
 
-// Reviews
+// Reviews Array - objects representing user reviews
 const reviews: Review[] = [
     {
         name: 'Sheila',
@@ -34,6 +35,7 @@ const reviews: Review[] = [
     },
 ]
 
+// User Object - object representing a user with properties such as firstName, lastName, permissions, etc.
 const you = {
     firstName: 'Bobby',
     lastName: 'Brown',
@@ -43,7 +45,7 @@ const you = {
     stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
 }
 
-// Array of Properties
+// Properties Array - objects representing different properties
 const properties : Property[] = [
     {
         image: 'images/colombia-property.jpg',
@@ -99,12 +101,13 @@ const properties : Property[] = [
     }
 ]
 
-// Functions
+// Function Calls
+// showReviewTotal: Displays the total number of reviews, the name of the first reviewer, and their loyalty status
 showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
-
+// populateUser: Populates user data, likely into the DOM, based on whether the user is returning and their first name
 populateUser(you.isReturning, you.firstName)
 
-// Add the properties
+// Adding Properties to the DOM
 for (let i = 0; i < properties.length; i++) {
     const card = document.createElement('div')
     card.classList.add('card')
@@ -116,6 +119,8 @@ for (let i = 0; i < properties.length; i++) {
     propertyContainer.appendChild(card)
 }
 
+// Adding Reviews Function 
+// Defines a function addReviews that, when called, adds the top two reviews to the reviewContainer and removes the button to prevent further additions
 let count = 0
 function addReviews(array : Review[]) : void {
     if (!count ) {
@@ -131,12 +136,15 @@ function addReviews(array : Review[]) : void {
     }
 }
 
+// Button Event Listener = Adds an event listener to the button that calls addReviews when clicked
 button.addEventListener('click', () => addReviews(reviews))
 
+// Current Location Display
 let currentLocation : [string, string, number] = ['London', '11.03', 17]
 footer.innerHTML = currentLocation[0] + ' ' + currentLocation[1] + ' ' + currentLocation[2] + '°'
 
-
+// Main Property Initialization and Display
+// Creates a new instance of MainProperty and displays its image in the mainImageContainer
 let yourMainProperty = new MainProperty(
     'images/italian-property.jpg', 
     'Italian House',
