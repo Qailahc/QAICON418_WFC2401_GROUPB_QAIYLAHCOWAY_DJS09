@@ -1,20 +1,13 @@
-# Getting Started
-Install the dependencies and run the project in watch mode
-```
-npm install
-npm run build # or watch to rebuild on change
-open index.html
-```
-Note that using Webpack is obselete and this archive has been provided
-for compatibility reasons. Prefer using Vite, check it at https://vitejs.dev
-## About Scrimba
+# DJS09: Couch Surfing | Typescript Practice
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Challenge Overview
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+Are you ready to get stuck into some Typescript? For this challenge, you are required to code along with the lecturer from this lesson:  Couch Surfing Website
 
-Happy Coding!
+For this challenge you are required to code along with the lecturer from this lesson: Learn Typescript Tutorial
+
+The focus for this project will be to understand the concepts around a JavaScript superset like Typescript and to get a feel for how it works. You will need to submit the finished Couch Surfing Website as your DJS09 Submission. 
+
+**🚨 Note: You will need to make GitHub commits to your project after each lesson in the Scrimba walkthrough, showing that you have followed along with the lessons.**
+
+Make sure to submit your project on the LMS Project Tab [DJS09] 
