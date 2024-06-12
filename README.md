@@ -11,3 +11,7 @@ The focus for this project will be to understand the concepts around a JavaScrip
 **🚨 Note: You will need to make GitHub commits to your project after each lesson in the Scrimba walkthrough, showing that you have followed along with the lessons.**
 
 Make sure to submit your project on the LMS Project Tab [DJS09] 
+
+# LOOM Video: 
+
+https://www.loom.com/share/6d424b0202c24f4db3eb7355a67f5fd6?sid=0d1afd78-2deb-4c04-b847-ef320d2d62f0
